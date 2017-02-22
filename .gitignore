@@ -9,6 +9,14 @@ nohup.out
 # Secret configurations
 config/
 
+# Files
+public/files/
+
+# External stuff
+public/css/materialize.min.css
+public/fonts/
+public/js/*.min.js
+
 # Runtime data
 pids
 *.pid
