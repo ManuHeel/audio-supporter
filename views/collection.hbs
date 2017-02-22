@@ -1,0 +1,12 @@
+<div>
+  <h1>{{name}}</h1>
+  <h2>by <span>{{author}}</span></h2>
+  <h3>#{{id}}</h3>
+  <p>{{description}}</p>
+  <h2>Sounds</h2>
+  <ul>
+    {{#each sounds}}
+      <li>{{this.name}}</li>
+    {{/each}}
+  </ul>
+</div>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon server.js > nodemon.log 2> nodemon.log &",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Manuel Russello",
@@ -13,6 +13,9 @@
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
     "express-handlebars": "^3.0.0",
-    "nodemon": "^1.11.0"
+    "forever": "^0.15.3",
+    "materialize-autocomplete": "^1.0.7",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.2"
   }
 }

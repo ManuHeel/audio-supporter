@@ -1,99 +1,30 @@
-/* RESET CSS by Eric Meyer */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
-section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-a {
-  outline: 0;
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Custom CSS */
 /* Main css */
-html {
-  color: #EEE;
-  background-color: #444;
-  font-family: sans-serif;
+.autocomplete {
+    display: -ms-flexbox;
+    display: flex;
 }
-#body {
-  padding : 32px;
-  list-style: none;
+.autocomplete .ac-tags {
+    padding-top: 10px;
 }
-#body a {
-  color: #0F4;
-  text-decoration: none;
+.autocomplete .ac-tags .chip {
+    -ms-flex: auto;
+    flex: auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
-#body a:hover {
-  color: #4FA;
+.autocomplete .ac-tags .chip:last-child {
+    margin-right: 5px;
 }
-h1 {
-  font-size: 32px;
+.autocomplete .ac-dropdown .ac-hover {
+    background: #eee;
 }
-h2 {
-  font-size: 24px;
+.autocomplete .ac-input {
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 150px;
+    padding-top: 0.6rem;
 }
-h3 {
-  color : #CCC;
-  font-size: 16px;
+.autocomplete .ac-input input {
+    height: 2.4rem;
 }
-/* Header navigation bar */
-header {
-  height: 64px;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-}
-header h1 {
-  font-size: 32px;
-  margin : 32px;
-}
-/* Error 404 page */
-#error-404 {
-  font-size: 24px;
-  padding : 128px 0px;
-}
-#error-404 * {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-}
-#error-404 h1 {
-  font-size: 128px;
-}
-#error-404 h2 {
-  font-size: 32px;
-}
-/* Sound page */

@@ -1,0 +1,22 @@
+<div>
+  <h1>
+    {{userName}}
+    {{#if isSupporter}}
+      <span title="This user is a Supporter">&#9733</span>
+    {{/if}}
+  </h1>
+  <h2>{{fullName}}</h2>
+  <p>{{description}}</p>
+  <h2>Collections</h2>
+  <ul>
+    {{#each collections}}
+      <li>{{this.name}}</li>
+    {{/each}}
+  </ul>
+  <h2>Sounds</h2>
+  <ul>
+    {{#each sounds}}
+      <li>{{this.name}}</li>
+    {{/each}}
+  </ul>
+</div>

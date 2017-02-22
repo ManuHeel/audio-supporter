@@ -1,19 +1,20 @@
-<div class="sound-page">
-  <h1>{{soundName}}</h1>
-  <h2>by <span>{{soundAuthor}}</span></h2>
-  <h3>#{{soundId}}</h3>
-  <h2>Duration : {{soundDuration}} seconds</h2>
-  <p class="sound-description">{{soundDescription}}</p>
+<div>
+  <h1>{{name}}</h1>
+  <h2>by <span>{{author}}</span></h2>
+  <h3>#{{id}}</h3>
+  <h2>Duration : {{duration}} seconds</h2>
+  <p>{{description}}</p>
+  <a href="{{url}}" download>Download</a>
   <h2>Tags</h2>
-  <li>
-    {{#each soundTags}}
-      <ul>{{this}}</ul>
+  <ul>
+    {{#each tags}}
+      <li>{{this}}</li>
     {{/each}}
-  </li>
-  <h2>Tags</h2>
-  <li>
-    {{#each soundCollections}}
-      <ul>{{this}}</ul>
+  </ul>
+  <h2>Collections</h2>
+  <ul>
+    {{#each collections}}
+      <li>{{this.name}}</li>
     {{/each}}
-  </li>
+  </ul>
 </div>
